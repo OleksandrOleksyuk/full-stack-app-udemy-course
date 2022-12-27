@@ -1,0 +1,21 @@
+{
+  "name": "full-stack-app-udemy-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css",
+    "watch": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OleksandrOleksyuk/full-stack-app-udemy-course.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OleksandrOleksyuk/full-stack-app-udemy-course/issues"
+  },
+  "homepage": "https://github.com/OleksandrOleksyuk/full-stack-app-udemy-course#readme"
+}

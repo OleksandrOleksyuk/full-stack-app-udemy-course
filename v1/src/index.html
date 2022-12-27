@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Today I learned</title>
     <link href="/dist/output.css" rel="stylesheet" />
+    <script type="module" defer src="script.js"></script>
+    <title>Today I learned</title>
   </head>
   <body class="bg-stone-800 text-stone-100 px-12 py-16">
     <div class="max-w-screen-xl mx-auto">
@@ -19,14 +20,16 @@
           </h1>
         </div>
         <button
+          id="btn-open"
           class="lg:text-3xl md:font-semibold cursor-pointer transition duration-300 hover:scale-110 hover:-rotate-2 border-none py-1 md:py-5 uppercase rounded-2xl md:rounded-full px-2 md:px-12 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 border-2"
         >
           Share a fact
         </button>
       </header>
       <form
+        id="form"
         action=""
-        class="flex xl:flex-row flex-col gap-4 xl:items-center bg-stone-700 rounded-2xl mb-10 py-4 px-4 md:px-10"
+        class="hidden xl:flex-row flex-col gap-4 xl:items-center bg-stone-700 rounded-2xl mb-10 py-4 px-4 md:px-10"
       >
         <input
           class="border-none xl:grow font-mono bg-stone-500 placeholder:text-stone-700 p-4 xl:text-lg rounded-full"
@@ -80,8 +83,8 @@
           </ul>
         </aside>
         <section class="col-span-3">
-          <ul class="space-y-4">
-            <li
+          <ul id="facts-list" class="space-y-4">
+            <!-- <li
               class="bg-stone-700 rounded-2xl px-6 py-4 grid lg:grid-cols-4 justify-between gap-2 items-center"
             >
               <div class="col-span-3 lg:flex items-center justify-between">
@@ -158,7 +161,7 @@
                   <p class="bold">4</p>
                 </button>
               </div>
-            </li>
+            </li> -->
           </ul>
         </section>
       </main>
